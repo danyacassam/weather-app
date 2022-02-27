@@ -143,3 +143,7 @@ strong {
 .separator {
   color: white;
 }
+
+.sourceCode {
+  text-align: center;
+}
