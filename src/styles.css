@@ -144,3 +144,23 @@ strong {
 .sourceCode {
   text-align: center;
 }
+
+#london,
+#madrid,
+#dubai,
+#abuDhabi,
+#geneva {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#london:hover,
+#madrid:hover,
+#dubai:hover,
+#abuDhabi:hover,
+#geneva:hover {
+  text-decoration: underline;
+  text-decoration-color: yellow;
+  font-weight: bold;
+}

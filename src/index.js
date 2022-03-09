@@ -75,6 +75,43 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
+// Cities Searches
+function searchLondon(event) {
+  event.preventDefault();
+  search("London");
+}
+function searchMadrid(event) {
+  event.preventDefault();
+  search("Madrid");
+}
+function searchDubai(event) {
+  event.preventDefault();
+  search("Dubai");
+}
+function searchAbuDhabi(event) {
+  event.preventDefault();
+  search("AbuDhabi");
+}
+function searchGeneva(event) {
+  event.preventDefault();
+  search("Geneva");
+}
+
+let clickLondon = document.querySelector("#london");
+clickLondon.addEventListener("click", searchLondon);
+
+let clickMadrid = document.querySelector("#madrid");
+clickMadrid.addEventListener("click", searchMadrid);
+
+let clickDubai = document.querySelector("#dubai");
+clickDubai.addEventListener("click", searchDubai);
+
+let clickAbuDhabi = document.querySelector("#abuDhabi");
+clickAbuDhabi.addEventListener("click", searchAbuDhabi);
+
+let clickGenava = document.querySelector("#geneva");
+clickGenava.addEventListener("click", searchGeneva);
+
 let fahrenheitTemperature = document.querySelector("#fahrenheitButton");
 fahrenheitTemperature.addEventListener("click", temperatureInFahrenheit);
 let celsiusTemperature = document.querySelector("#celsiusButton");
