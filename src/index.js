@@ -78,23 +78,23 @@ function getCurrentLocation(event) {
 // Cities Searches
 function searchLondon(event) {
   event.preventDefault();
-  search("London");
+  searchCity("London");
 }
 function searchMadrid(event) {
   event.preventDefault();
-  search("Madrid");
+  searchCity("Madrid");
 }
 function searchDubai(event) {
   event.preventDefault();
-  search("Dubai");
+  searchCity("Dubai");
 }
 function searchAbuDhabi(event) {
   event.preventDefault();
-  search("AbuDhabi");
+  searchCity("AbuDhabi");
 }
 function searchGeneva(event) {
   event.preventDefault();
-  search("Geneva");
+  searchCity("Geneva");
 }
 
 let clickLondon = document.querySelector("#london");

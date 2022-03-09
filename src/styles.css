@@ -79,6 +79,10 @@ strong {
   margin-left: 80px;
 }
 
+#temperatureInfo {
+  font-size: 30px;
+}
+
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:active,
@@ -111,7 +115,7 @@ strong {
 
 #date {
   color: #ffff;
-  font-size: 30px;
+  font-size: 16px;
 }
 
 .current-location-button {
@@ -161,6 +165,6 @@ strong {
 #abuDhabi:hover,
 #geneva:hover {
   text-decoration: underline;
-  text-decoration-color: yellow;
+  text-decoration-color: rgb(22, 120, 128);
   font-weight: bold;
 }
