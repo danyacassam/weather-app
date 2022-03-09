@@ -34,6 +34,12 @@ strong {
     rgb(20, 149, 158) 0%,
     rgb(32, 156, 165) 90%
   );
+  /*
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/879/original/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg?1646848904");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  */
 }
 .card-body {
   background: radial-gradient(
