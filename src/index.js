@@ -100,6 +100,15 @@ function searchGeneva(event) {
 let clickLondon = document.querySelector("#london");
 clickLondon.addEventListener("click", searchLondon);
 
+function changeImg() {
+  var image = document.getElementById("myImg");
+  if (image.src.match("images/weather_app.svg")) {
+    image.src = "images/Paris.jpg";
+  } else {
+    image.src = "images/weather_app.svg";
+  }
+}
+
 let clickMadrid = document.querySelector("#madrid");
 clickMadrid.addEventListener("click", searchMadrid);
 
