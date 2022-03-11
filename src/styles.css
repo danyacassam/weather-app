@@ -18,9 +18,6 @@ p {
   color: white;
   font-size: 16px;
 }
-strong {
-  font-size: 24px;
-}
 
 .weather-app {
   max-width: 700px;
@@ -81,6 +78,13 @@ strong {
 
 #temperatureInfo {
   font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.temperatureInfo img {
+  height: 50px;
+  width: 50px;
 }
 
 .btn-primary,
