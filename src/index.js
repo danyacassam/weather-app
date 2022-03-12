@@ -3,6 +3,11 @@ function formatDate(date) {
   if (hours < 10) {
     hours = `0${hours}`;
   }
+  /*
+  if (hours == 18) {
+    document.getElementById("weekTemperature").style.background = "#4F8A8C";
+  }
+  */
 
   let minutes = date.getMinutes();
   if (minutes < 10) {
@@ -20,12 +25,13 @@ function formatDate(date) {
     "Saturday",
   ];
   let day = days[dayIndex];
-  return `${day} ${hours}:${minutes}`;
+  return `Last updated: ${day} ${hours}:${minutes}`;
 }
 
 function temperatureInFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperatureInfo");
+  celsiusTemperature.classList.remove("btn-outline-primary");
   let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemp) + "°F";
 }

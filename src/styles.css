@@ -27,25 +27,11 @@ p {
   border-radius: 15px;
   box-shadow: 5px 5px 10px 3px rgb(10 10 10 / 20%);
   background: #3080a7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #5296b3,
-    #3080a7
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #5296b3,
-    #3080a7
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to bottom, #5296b3, #3080a7);
+  background: linear-gradient(to bottom, #5296b3, #3080a7);
 }
 .card-body {
   background: radial-gradient(circle at 10% 20%, #2c5773 0%, #3080a7 90%);
-  /*
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/879/original/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg?1646848904");
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-  */
 }
 
 .card {
@@ -53,12 +39,8 @@ p {
 }
 
 .weekTemperature {
-  background: #3080a7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #5296b3,
-    #3080a7
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: #3080a7;
+  background: -webkit-linear-gradient(to bottom, #5296b3, #3080a7);
   background: linear-gradient(to bottom, #5296b3, #3080a7);
   color: white;
   text-align: center;
@@ -82,12 +64,6 @@ p {
 
 .temperatureInput {
   margin-left: 80px;
-}
-
-#temperatureInfo {
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
 }
 
 .temperatureInfo img {
@@ -125,11 +101,6 @@ p {
   font-size: 16px;
 }
 
-#date {
-  color: #ffff;
-  font-size: 16px;
-}
-
 .current-location-button {
   margin: 0 auto;
   display: block;
@@ -146,19 +117,30 @@ p {
   color: #2c5773;
 }
 
-#description,
-#humidity,
-#wind {
-  color: white;
-  font-size: 16px;
-}
-
 .separator {
   color: white;
 }
 
 .sourceCode {
   text-align: center;
+}
+
+#date {
+  color: #ffff;
+  font-size: 16px;
+}
+
+#temperatureInfo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+#description,
+#humidity,
+#wind {
+  color: white;
+  font-size: 16px;
 }
 
 #london,
@@ -179,10 +161,9 @@ p {
   font-weight: bold;
 }
 /*
-#london {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/879/original/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg?1646848904");
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
-}
+
 */
