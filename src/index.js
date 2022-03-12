@@ -25,18 +25,20 @@ function formatDate(date) {
 
 function temperatureInFahrenheit(event) {
   event.preventDefault();
-  var temperatureElement = document.querySelector("#temperatureInfo");
-  temperatureElement.innerHTML = 59 + "°F";
+  let temperatureElement = document.querySelector("#temperatureInfo");
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp) + "°F";
 }
 
 function temperatureInCelsius(event) {
   event.preventDefault();
   var temperatureElement = document.querySelector("#temperatureInfo");
-  temperatureElement.innerHTML = 15 + "°C";
+  temperatureElement.innerHTML = Math.round(celsiusTemp) + "°C";
 }
 
 function displayWeather(response) {
   document.querySelector("#cityElement").innerHTML = response.data.name;
+  celsiusTemp = response.data.main.temp;
   document.querySelector("#temperatureInfo").innerHTML =
     Math.round(response.data.main.temp) + "°C";
   document.querySelector(
@@ -134,6 +136,8 @@ let fahrenheitTemperature = document.querySelector("#fahrenheitButton");
 fahrenheitTemperature.addEventListener("click", temperatureInFahrenheit);
 let celsiusTemperature = document.querySelector("#celsiusButton");
 celsiusTemperature.addEventListener("click", temperatureInCelsius);
+
+let celsiusTemp = null;
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
