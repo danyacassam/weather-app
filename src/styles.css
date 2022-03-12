@@ -38,6 +38,12 @@ p {
     rgb(13, 112, 119) 0%,
     rgb(22, 120, 128) 90%
   );
+  /*
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/879/original/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg?1646848904");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  */
 }
 
 .card {
