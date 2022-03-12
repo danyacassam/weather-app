@@ -88,6 +88,19 @@ function getCurrentLocation(event) {
 function searchLondon(event) {
   event.preventDefault();
   searchCity("London");
+  document.getElementById("myDiv").style.backgroundPosition = "center";
+  //document.getElementById("myDiv").style.backgroundRepeat = "repeat";
+  //document.getElementById("myDiv").style.backgroundSize = "cover";
+  document.getElementById("myDiv").style.backgroundImage =
+    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/017/original/massimiliano-morosinotto-paINk01G8Xk-unsplash.jpg?1647045110')";
+
+  document.getElementById("myDiv1").style.backgroundPosition = "center";
+  //document.getElementById("myDiv").style.backgroundRepeat = "repeat";
+  document.getElementById("myDiv1").style.backgroundSize = "cover";
+  document.getElementById("myDiv1").style.backgroundImage =
+    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/017/original/massimiliano-morosinotto-paINk01G8Xk-unsplash.jpg?1647045110')";
+
+  document.getElementById("weekTemperature").style.background = "orange";
 }
 function searchMadrid(event) {
   event.preventDefault();

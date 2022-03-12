@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
+      <div class="weather-app" id="myDiv">
         <h1>Weather APP</h1>
         <br />
         <form class="search-form" id="search-form">
@@ -73,7 +73,7 @@
         <br />
         <div class="row navbar">
           <div class="col">
-              <a href="" id="london" onclick="changeImg()">London</a>
+              <a href="" id="london" onclick="searchLondon()">London</a>
               </div>
           <div class="col">
               <a href="" id="madrid">Madrid</a>
@@ -89,8 +89,8 @@
               </div>
         </div>
         <br />
-        <div class="card">
-          <div class="card-body">
+        <div class="card" id="myDiv">
+          <div class="card-body" id="myDiv1">
             <div class="row">
               <div class="col-12">
                 <h3 id="cityElement"></h3>
@@ -130,7 +130,7 @@
             </div>
                 <hr />
                 <div class="card">
-                  <div class="card-body weekTemperature">
+                  <div class="card-body weekTemperature" id="weekTemperature">
                     <div class="row">
                       <div class="col">
                         Monday
