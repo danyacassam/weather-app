@@ -92,10 +92,6 @@ p {
   color: #2c5773;
 }
 
-.emojis {
-  font-size: 90px;
-}
-
 .dayNightInfo {
   color: white;
   font-size: 16px;
@@ -160,6 +156,34 @@ p {
 #geneva:hover {
   font-weight: bold;
 }
+
+.emojis {
+  margin-right: 0 auto;
+  width: 85px;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 20px;
+  text-align: center;
+}
+
+.weather-forecast-temperatures {
+  font-size: 16px;
+}
+
+.weather-forecast-temperature-max {
+  text-align: center;
+}
+
+.weather-forecast-temperature-min {
+  text-align: center;
+}
+
 /*
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/879/original/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg?1646848904");
   background-position: center;
