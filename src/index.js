@@ -94,19 +94,19 @@ function getCurrentLocation(event) {
 function searchLondon(event) {
   event.preventDefault();
   searchCity("London");
-  //document.getElementById("myDiv").style.backgroundPosition = "center";
-  //document.getElementById("myDiv").style.backgroundRepeat = "repeat";
-  //document.getElementById("myDiv").style.backgroundSize = "cover";
-  //document.getElementById("myDiv").style.backgroundImage =
-  //("url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/017/original/massimiliano-morosinotto-paINk01G8Xk-unsplash.jpg?1647045110')");
+  document.getElementById("myDiv").style.backgroundPosition = "center";
+  document.getElementById("myDiv").style.backgroundRepeat = "repeat";
+  document.getElementById("myDiv").style.backgroundSize = "cover";
+  document.getElementById("myDiv").style.backgroundImage =
+    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/112/original/martin-kozon-jjqljdXMPZE-unsplash.jpg?1647126055')";
 
-  document.getElementById("myDiv1").style.backgroundPosition = "center";
-  //document.getElementById("myDiv").style.backgroundRepeat = "repeat";
-  document.getElementById("myDiv1").style.backgroundSize = "cover";
-  document.getElementById("myDiv1").style.backgroundImage =
-    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/017/original/massimiliano-morosinotto-paINk01G8Xk-unsplash.jpg?1647045110')";
-
-  document.getElementById("weekTemperature").style.background = "#4F8A8C";
+  // document.getElementById("myDiv1").style.backgroundPosition = "center";
+  // document.getElementById("myDiv").style.backgroundRepeat = "repeat";
+  // document.getElementById("myDiv1").style.backgroundSize = "cover";
+  // document.getElementById("myDiv1").style.backgroundImage =
+  //   "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/112/original/martin-kozon-jjqljdXMPZE-unsplash.jpg?1647126055')";
+  document.getElementById("myImg").style.display = "none";
+  document.getElementById("weekTemperature").style.background = "#3080a7";
 }
 function searchMadrid(event) {
   event.preventDefault();
@@ -115,6 +115,21 @@ function searchMadrid(event) {
 function searchDubai(event) {
   event.preventDefault();
   searchCity("Dubai");
+  // document.getElementById("myDiv").style.backgroundPosition = "center";
+  // document.getElementById("myDiv").style.backgroundRepeat = "repeat";
+  // document.getElementById("myDiv").style.backgroundSize = "cover";
+  // document.getElementById("myDiv").style.backgroundImage =
+  //   "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/112/original/martin-kozon-jjqljdXMPZE-unsplash.jpg?1647126055')";
+
+  // document.getElementById("myDiv1").style.backgroundPosition = "center";
+  // document.getElementById("myDiv").style.backgroundRepeat = "repeat";
+  // document.getElementById("myDiv1").style.backgroundSize = "cover";
+  // document.getElementById("myDiv1").style.backgroundImage =
+  //   "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/113/original/darcey-beau-vtK31JoeAFk-unsplash_%281%29.jpg?1647127129')";
+  // // document.getElementById("myDiv1").style.height = "400px";
+  // // document.getElementById("myDiv1").style.width = "670px";
+  // document.getElementById("myImg").style.display = "none";
+  // document.getElementById("weekTemperature").style.background = "#3080a7";
 }
 function searchAbuDhabi(event) {
   event.preventDefault();
@@ -128,16 +143,17 @@ function searchGeneva(event) {
 let clickLondon = document.querySelector("#london");
 clickLondon.addEventListener("click", searchLondon);
 
-/*
-function changeImg() {
-  var image = document.getElementById("myImg");
-  if (image.src.match("images/weather_app.svg")) {
-    image.src = "images/Paris.jpg";
-  } else {
-    image.src = "images/weather_app.svg";
-  }
-}
-*/
+// function changeImg() {
+//   var image = document.getElementById("myImg");
+
+//   if (image.src.match("images/weather_app.svg")) {
+//     image.src = "images/Paris.jpg";
+//     image = document.getElementById("myImg").style.height = "500px";
+//     image = document.getElementById("myImg").style.width = "470px";
+//   } else {
+//     image.src = "images/weather_app.svg";
+//   }
+// }
 
 let clickMadrid = document.querySelector("#madrid");
 clickMadrid.addEventListener("click", searchMadrid);
