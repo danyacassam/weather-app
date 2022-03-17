@@ -3,11 +3,6 @@ function formatDate(date) {
   if (hours < 10) {
     hours = `0${hours}`;
   }
-  /*
-  if (hours == 18) {
-    document.getElementById("weekTemperature").style.background = "#4F8A8C";
-  }
-  */
 
   let minutes = date.getMinutes();
   if (minutes < 10) {
@@ -175,66 +170,62 @@ function getCurrentLocation(event) {
 function searchLondon(event) {
   event.preventDefault();
   searchCity("London");
-  document.getElementById("myDiv").style.backgroundPosition = "center";
-  document.getElementById("myDiv").style.backgroundRepeat = "repeat";
-  document.getElementById("myDiv").style.backgroundSize = "cover";
-  document.getElementById("myDiv").style.backgroundImage =
-    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/112/original/martin-kozon-jjqljdXMPZE-unsplash.jpg?1647126055')";
-
-  // document.getElementById("myDiv1").style.backgroundPosition = "center";
-  // document.getElementById("myDiv").style.backgroundRepeat = "repeat";
-  // document.getElementById("myDiv1").style.backgroundSize = "cover";
-  // document.getElementById("myDiv1").style.backgroundImage =
-  //   "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/112/original/martin-kozon-jjqljdXMPZE-unsplash.jpg?1647126055')";
-  document.getElementById("myImg").style.display = "none";
-  document.getElementById("weekTemperature").style.background = "#3080a7";
+  document.body.style.backgroundPosition = "center";
+  document.body.style.backgroundRepeat = "repeat";
+  document.body.style.backgroundSize = "38%";
+  document.body.style.backgroundImage = document.body.style.backgroundImage =
+    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/108/original/henry-be-MdJq0zFUwrw-unsplash.jpg?1647125650')";
+  document.getElementById("sourceCode").style.color = "white";
+  document.getElementById("textLink").style.color = "#3bd4df";
+  document.getElementById("textBox").style.backgroundColor = "#2D5D7B";
 }
 function searchMadrid(event) {
   event.preventDefault();
   searchCity("Madrid");
+  document.body.style.backgroundPosition = "center";
+  document.body.style.backgroundRepeat = "repeat";
+  document.body.style.backgroundSize = "38%";
+  document.body.style.backgroundImage =
+    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/015/original/jordi-moncasi-rZwGJrkYFFY-unsplash.jpg?1647044778')";
+  document.getElementById("sourceCode").style.color = "white";
+  document.getElementById("textBox").style.backgroundColor = "#2D5D7B";
 }
 function searchDubai(event) {
   event.preventDefault();
   searchCity("Dubai");
-  // document.getElementById("myDiv").style.backgroundPosition = "center";
-  // document.getElementById("myDiv").style.backgroundRepeat = "repeat";
-  // document.getElementById("myDiv").style.backgroundSize = "cover";
-  // document.getElementById("myDiv").style.backgroundImage =
-  //   "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/112/original/martin-kozon-jjqljdXMPZE-unsplash.jpg?1647126055')";
-
-  // document.getElementById("myDiv1").style.backgroundPosition = "center";
-  // document.getElementById("myDiv").style.backgroundRepeat = "repeat";
-  // document.getElementById("myDiv1").style.backgroundSize = "cover";
-  // document.getElementById("myDiv1").style.backgroundImage =
-  //   "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/113/original/darcey-beau-vtK31JoeAFk-unsplash_%281%29.jpg?1647127129')";
-  // // document.getElementById("myDiv1").style.height = "400px";
-  // // document.getElementById("myDiv1").style.width = "670px";
-  // document.getElementById("myImg").style.display = "none";
-  // document.getElementById("weekTemperature").style.background = "#3080a7";
+  document.body.style.backgroundPosition = "center";
+  document.body.style.backgroundRepeat = "repeat";
+  document.body.style.backgroundSize = "38%";
+  document.body.style.backgroundImage =
+    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/113/original/darcey-beau-vtK31JoeAFk-unsplash_%281%29.jpg?1647127129')";
+  document.getElementById("sourceCode").style.color = "white";
+  document.getElementById("textBox").style.backgroundColor = "#2D5D7B";
 }
-function searchAbuDhabi(event) {
+function searchParis(event) {
   event.preventDefault();
-  searchCity("AbuDhabi");
+  searchCity("Paris");
+  document.body.style.backgroundPosition = "center";
+  document.body.style.backgroundRepeat = "repeat";
+  document.body.style.backgroundSize = "40%";
+  document.body.style.backgroundImage =
+    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/879/original/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg?1646848904')";
+  document.getElementById("sourceCode").style.color = "white";
+  document.getElementById("textBox").style.backgroundColor = "#2D5D7B";
 }
-function searchGeneva(event) {
+function searchChicago(event) {
   event.preventDefault();
-  searchCity("Geneva");
+  searchCity("Chicago");
+  document.body.style.backgroundPosition = "center";
+  document.body.style.backgroundRepeat = "repeat";
+  document.body.style.backgroundSize = "45%";
+  document.body.style.backgroundImage =
+    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/440/original/sawyer-bengtson-tnv84LOjes4-unsplash.jpg?1647477316')";
+  document.getElementById("sourceCode").style.color = "white";
+  document.getElementById("textBox").style.backgroundColor = "#2D5D7B";
 }
 
 let clickLondon = document.querySelector("#london");
 clickLondon.addEventListener("click", searchLondon);
-
-// function changeImg() {
-//   var image = document.getElementById("myImg");
-
-//   if (image.src.match("images/weather_app.svg")) {
-//     image.src = "images/Paris.jpg";
-//     image = document.getElementById("myImg").style.height = "500px";
-//     image = document.getElementById("myImg").style.width = "470px";
-//   } else {
-//     image.src = "images/weather_app.svg";
-//   }
-// }
 
 let clickMadrid = document.querySelector("#madrid");
 clickMadrid.addEventListener("click", searchMadrid);
@@ -242,11 +233,11 @@ clickMadrid.addEventListener("click", searchMadrid);
 let clickDubai = document.querySelector("#dubai");
 clickDubai.addEventListener("click", searchDubai);
 
-let clickAbuDhabi = document.querySelector("#abuDhabi");
-clickAbuDhabi.addEventListener("click", searchAbuDhabi);
+let clickParis = document.querySelector("#paris");
+clickParis.addEventListener("click", searchParis);
 
-let clickGenava = document.querySelector("#geneva");
-clickGenava.addEventListener("click", searchGeneva);
+let clickChicago = document.querySelector("#chicago");
+clickChicago.addEventListener("click", searchChicago);
 
 let fahrenheitTemperature = document.querySelector("#fahrenheitButton");
 fahrenheitTemperature.addEventListener("click", temperatureInFahrenheit);
