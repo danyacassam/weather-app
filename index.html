@@ -12,9 +12,9 @@
     />
     <link rel="stylesheet" href="src/styles.css" />
     <script
-    src="https://kit.fontawesome.com/28a148dac7.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/28a148dac7.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
@@ -37,10 +37,14 @@
                   />
                 </div>
                 <button type="button" class="btn btn-primary">
-                    <i class="fas fa-search searchIcon"></i>
-                  </button>
-                <br>
-                <button type="button" class="current-location-button" id="current-location-button">
+                  <i class="fas fa-search searchIcon"></i>
+                </button>
+                <br />
+                <button
+                  type="button"
+                  class="current-location-button"
+                  id="current-location-button"
+                >
                   Current Location
                 </button>
               </div>
@@ -53,7 +57,7 @@
                     id="celsiusButton"
                     autocomplete="off"
                   />
-                  <label class="btn btn-outline-primary" for="celsiusButton" 
+                  <label class="btn btn-outline-primary" for="celsiusButton"
                     >°C</label
                   >
                   <input
@@ -73,20 +77,20 @@
         <br />
         <div class="row navbar">
           <div class="col">
-              <a href="" id="london" onclick="searchLondon()">London</a>
-              </div>
+            <a href="" id="london" onclick="searchLondon()">London</a>
+          </div>
           <div class="col">
-              <a href="" id="madrid">Madrid</a>
-              </div>
-          <div class="col"> 
-              <a href="" id="dubai" onclick="changeImg()">Dubai</a>
-              </div>
-          <div class="col"> 
-              <a href="" id="abuDhabi">Abu Dhabi</a>
-              </div>
-          <div class="col"> 
-              <a href="" id="geneva">Geneva</a>
-              </div>
+            <a href="" id="madrid">Madrid</a>
+          </div>
+          <div class="col">
+            <a href="" id="dubai" onclick="changeImg()">Dubai</a>
+          </div>
+          <div class="col">
+            <a href="" id="abuDhabi">Abu Dhabi</a>
+          </div>
+          <div class="col">
+            <a href="" id="geneva">Geneva</a>
+          </div>
         </div>
         <br />
         <div class="card" id="myDiv">
@@ -95,108 +99,66 @@
               <div class="col-12">
                 <h3 id="cityElement"></h3>
                 <p class="temperatureInfo">
-                    <span>
-                        <img src="" alt="" class="iconClass" id="icon">
-
-                    </span>
-                 <strong id="temperatureInfo"></strong>
+                  <span>
+                    <img src="" alt="" class="iconClass" id="icon"
+                  /></span>
+                  <strong id="temperatureInfo"></strong>
                   <br />
-                  <div class="separator">
-                      <span id="date"></span> 
-                      |
-                      <span class="description" id="description"></span>
-                  </div>
-                  </div>
-                  <br>
-                  <div class="separator">
-                    <span class="humidity" id="humidity">
-                    </span>
-                    |
-                    <span class="wind" id="wind"></span>
-                  </div>
-                  <div class="col">
-                    <img
-                      src="images/weather_app.svg"
-                      id="myImg"
-                      class="weatherAppImage"
-                      alt="Weather App"
-                    />
-                    <div class="dayNightInfo" id="dayNightInfo">
-                    </div>
-                  <br />
-                </div>
                 </p>
-            </div>
-                <hr />
-                <div class="weather-forecast" id="forecast">
-                  <div class="card">
-                    <div class="card-body weekTemperature" id="weekTemperature">
-                      <!-- <div class="row">
-                        <div class="col-2">
-                          <div class="weather-forecast-date">
-                            Monday
-                          </div>
-                          <img src="https://openweathermap.org/img/wn/04n@2x.png" alt="" class="emojis" id="icon">
-                          <div class="weather-forecast-temperatures">
-                            <span class="weather-forecast-temperature-max">
-                              17°
-                            </span>
-                              / 
-                            <span class="weather-forecast-temperature-min">
-                              9°
-                            </span>
-                          </div>
-                        </div> -->
-<!--
-                        <div class="col">
-                          Tuesday
-                          <br />
-                          <span class="emojis">⛈</span>
-                          <br>
-                          13°/8°
-                        </div>
 
-                        <div class="col">
-                          Wednesday
-                          <br />
-                          <span class="emojis">⛈</span>
-                          <br>
-                          15°/10°
-                        </div>
-
-                        <div class="col">
-                          Thursday
-                          <br />
-                          <span class="emojis">🌦</span>
-                          <br>
-                          12°/8°
-                        </div>
-
-                        <div class="col">
-                          Friday
-                          <br />
-                        <span class="emojis">🌤</span>
-                        <br>
-                          17°/9°
-                        </div>
-                        /* -->
-                    </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="separator">
+                  <span id="date"></span>
+                  |
+                  <span class="description" id="description"></span>
                 </div>
+              </div>
+              <br />
+              <div class="separator">
+                <span class="humidity" id="humidity"></span>
+                |
+                <span class="wind" id="wind"></span>
+              </div>
+              <div class="col">
+                <img
+                  src="images/weather_app.svg"
+                  id="myImg"
+                  class="weatherAppImage"
+                  alt="Weather App"
+                />
+                <div class="dayNightInfo" id="dayNightInfo"></div>
+                <br />
+              </div>
+            </div>
+            <hr />
+            <div class="weather-forecast" id="forecast">
+              <div class="card">
+                <div
+                  class="card-body weekTemperature"
+                  id="weekTemperature"
+                ></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <footer class="sourceCode">
-        This project was coded by 
-        <a href="https://www.linkedin.com/in/danya-cassam-2b20ba15b/?originalSubdomain=pt" target="_blank"> Danya Cassam</a> and is 
-          <a href="https://github.com/danyacassam/weather-app" target="_blank"> open-source code on GitHub</a> and 
-          <a href="https://elated-leakey-27d210.netlify.app/" target="_blank"> hosted on Netlify</a>
-      </footer>
     </div>
+    <footer class="sourceCode">
+      This project was coded by
+      <a
+        href="https://www.linkedin.com/in/danya-cassam-2b20ba15b/?originalSubdomain=pt"
+        target="_blank"
+      >
+        Danya Cassam</a
+      >
+      and is
+      <a href="https://github.com/danyacassam/weather-app" target="_blank">
+        open-source code on GitHub</a
+      >
+      and
+      <a href="https://elated-leakey-27d210.netlify.app/" target="_blank">
+        hosted on Netlify</a
+      >
+    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>
