@@ -18,6 +18,13 @@ p {
   color: white;
   font-size: 16px;
 }
+body {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/447/original/alessio-soggetti-cfKC0UOZHJo-unsplash.jpg?1647480104);
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 .weather-app {
   max-width: 700px;
@@ -26,22 +33,42 @@ p {
   padding: 20px;
   border-radius: 15px;
   box-shadow: 5px 5px 10px 3px rgb(10 10 10 / 20%);
-  background: #3080a7; /* fallback for old browsers */
+  background: rgb(48, 128, 167, 0.6);
   background: -webkit-linear-gradient(to bottom, #5296b3, #3080a7);
-  background: linear-gradient(to bottom, #5296b3, #3080a7);
+  background: linear-gradient(
+    to bottom,
+    rgb(82, 150, 179, 0.8),
+    rgb(48, 128, 167, 0.8)
+  );
 }
 .card-body {
-  background: radial-gradient(circle at 10% 20%, #2c5773 0%, #3080a7 90%);
+  background: radial-gradient(
+    circle at 10% 20%,
+    #2c5773 0%,
+    rgb(48, 128, 167, 0.4) 90%
+  );
 }
 
 .card {
-  background: radial-gradient(circle at 10% 20%, #2c5773 0%, #3080a7 90%);
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(44, 87, 115, 0.6) 0%,
+    rgb(48, 128, 167, 0.6) 90%
+  );
 }
 
 .weekTemperature {
   background: #3080a7;
-  background: -webkit-linear-gradient(to bottom, #5296b3, #3080a7);
-  background: linear-gradient(to bottom, #5296b3, #3080a7);
+  background: -webkit-linear-gradient(
+    to bottom,
+    rgb(82, 150, 179, 0.9),
+    rgb(48, 128, 167, 0.9)
+  );
+  background: linear-gradient(
+    to bottom,
+    rgb(82, 150, 179, 0.9),
+    rgb(48, 128, 167, 0.9)
+  );
   color: white;
   text-align: center;
 }
@@ -117,8 +144,20 @@ p {
   color: white;
 }
 
-.sourceCode {
+.textBox {
   text-align: center;
+  background-color: white;
+  max-width: 735px;
+  margin: 0 auto;
+}
+
+.textLink {
+  color: #3f7ea8;
+}
+
+.textLink:hover {
+  color: #2fabb4;
+  cursor: pointer;
 }
 
 #date {
@@ -142,8 +181,8 @@ p {
 #london,
 #madrid,
 #dubai,
-#abuDhabi,
-#geneva {
+#paris,
+#chicago {
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -152,8 +191,8 @@ p {
 #london:hover,
 #madrid:hover,
 #dubai:hover,
-#abuDhabi:hover,
-#geneva:hover {
+#paris:hover,
+#chicago:hover {
   font-weight: bold;
 }
 
@@ -183,11 +222,3 @@ p {
 .weather-forecast-temperature-min {
   text-align: center;
 }
-
-/*
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/879/original/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg?1646848904");
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-
-*/
