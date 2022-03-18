@@ -33,7 +33,6 @@ function formatDay(timestamp) {
 }
 
 function displayForecastDayNightTemps(response) {
-  console.log(response.data);
   let forecastDayTemps = response.data.daily[0].temp.day;
   let forecastNightTemps = response.data.daily[0].temp.night;
 
