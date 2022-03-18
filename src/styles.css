@@ -168,12 +168,29 @@ body {
 }
 
 .weather-forecast-date {
+  margin: 0 auto;
   font-size: 20px;
   text-align: center;
 }
 
 .weather-forecast-temperatures {
+  text-align: center;
+  margin: 0 auto;
   font-size: 18px;
+}
+
+.weather-forecast-temperature-min {
+  text-align: center;
+  color: #c2ccd4;
+}
+
+/* .dayNightTemp {
+  color: #2fabb4;
+} */
+
+.emojis {
+  margin-right: 0 auto;
+  width: 85px;
 }
 
 #date {
