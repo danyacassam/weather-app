@@ -149,7 +149,9 @@ function searchCity(city) {
 function submitEvent(event) {
   event.preventDefault();
   var city = document.querySelector("#searchCityInput").value;
+
   searchCity(city);
+
   if (city == "London") {
     searchLondon(event);
   }
@@ -164,6 +166,8 @@ function submitEvent(event) {
   }
   if (city == "Chicago") {
     searchChicago(event);
+  } else if (city == "") {
+    alert("Please type a right city!");
   } else {
     document.body.style.backgroundPosition = "center";
     document.body.style.backgroundRepeat = "repeat";
