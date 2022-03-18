@@ -258,6 +258,8 @@ let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", submitEvent);
+let searchIconButton = document.querySelector("#search-icon-button");
+searchIconButton.addEventListener("click", submitEvent);
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 searchCity("Lisbon");
