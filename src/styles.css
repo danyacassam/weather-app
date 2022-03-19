@@ -28,7 +28,7 @@ body {
 
 .weather-app {
   max-width: 700px;
-  margin: 20px auto;
+  margin: 15px auto;
   box-sizing: border-box;
   padding: 20px;
   border-radius: 15px;
@@ -82,7 +82,7 @@ body {
 .weatherAppImage {
   width: 300px;
   margin-left: 340px;
-  margin-top: -100px;
+  margin-top: -150px;
 }
 
 .searchInput {
@@ -146,19 +146,20 @@ body {
 
 .textBox {
   text-align: center;
-  background-color: white;
-  max-width: 735px;
+  background-color: #3f7ea8;
+  max-width: 400px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 25px;
+  color: #3acdd8;
 }
 
 .textLink {
-  color: #3f7ea8;
+  color: white;
 }
 
 .textLink:hover {
-  color: #2fabb4;
+  color: white;
   cursor: pointer;
 }
 
@@ -183,10 +184,6 @@ body {
   text-align: center;
   color: #c2ccd4;
 }
-
-/* .dayNightInfo {
-  color: #2fabb4;
-} */
 
 .emojis {
   margin-right: 0 auto;
