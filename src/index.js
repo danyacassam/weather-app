@@ -167,7 +167,7 @@ function submitEvent(event) {
   if (city == "Chicago") {
     searchChicago(event);
   } else if (city == "") {
-    alert("Please type a city!");
+    alert("Please type a right city!");
   } else {
     document.body.style.backgroundPosition = "center";
     document.body.style.backgroundRepeat = "repeat";
