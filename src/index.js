@@ -174,6 +174,9 @@ function submitEvent(event) {
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundImage =
       "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/447/original/alessio-soggetti-cfKC0UOZHJo-unsplash.jpg?1647480104')";
+    //document.getElementById("sourceCode").style.color = "white";
+    document.getElementById("textLink").style.color = "#3bd4df";
+    document.getElementById("textBox").style.backgroundColor = "#2D5D7B";
   }
 }
 
@@ -198,7 +201,7 @@ function getCurrentLocation(event) {
 // Cities Searches
 function searchLondon(event) {
   event.preventDefault();
-  searchCity("London", "london");
+  searchCity("London");
   document.body.style.backgroundPosition = "center";
   document.body.style.backgroundRepeat = "repeat";
   document.body.style.backgroundSize = "38%";
