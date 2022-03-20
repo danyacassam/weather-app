@@ -172,7 +172,7 @@ function submitEvent(event) {
     document.body.style.backgroundPosition = "center";
     document.body.style.backgroundRepeat = "repeat";
     document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundImage = document.body.style.backgroundImage =
+    document.body.style.backgroundImage =
       "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/447/original/alessio-soggetti-cfKC0UOZHJo-unsplash.jpg?1647480104')";
   }
 }
@@ -191,18 +191,18 @@ function getCurrentLocation(event) {
   document.body.style.backgroundPosition = "center";
   document.body.style.backgroundRepeat = "repeat";
   document.body.style.backgroundSize = "cover";
-  document.body.style.backgroundImage = document.body.style.backgroundImage =
+  document.body.style.backgroundImage =
     "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/447/original/alessio-soggetti-cfKC0UOZHJo-unsplash.jpg?1647480104')";
 }
 
 // Cities Searches
 function searchLondon(event) {
   event.preventDefault();
-  searchCity("London");
+  searchCity("London", "london");
   document.body.style.backgroundPosition = "center";
   document.body.style.backgroundRepeat = "repeat";
   document.body.style.backgroundSize = "38%";
-  document.body.style.backgroundImage = document.body.style.backgroundImage =
+  document.body.style.backgroundImage =
     "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/108/original/henry-be-MdJq0zFUwrw-unsplash.jpg?1647125650')";
 }
 function searchMadrid(event) {
