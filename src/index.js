@@ -212,7 +212,7 @@ function searchLondon(event) {
     "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/108/original/henry-be-MdJq0zFUwrw-unsplash.jpg?1647125650')";
   document.getElementById("sourceCode").style.color = "white";
   document.getElementById("textLink").style.color = "#3bd4df";
-  document.getElementById("textBox").style.backgroundColor = "white";
+  document.getElementById("textBox").style.backgroundColor = "#2D5D7B";
 }
 function searchMadrid(event) {
   event.preventDefault();
