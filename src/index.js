@@ -149,22 +149,19 @@ function searchCity(city) {
 function submitEvent(event) {
   event.preventDefault();
   var city = document.querySelector("#searchCityInput").value;
+  city = city.toLowerCase().trim();
 
   searchCity(city);
 
-  if (city == "London") {
+  if (city == "london") {
     searchLondon(event);
-  }
-  if (city == "Madrid") {
+  } else if (city == "madrid") {
     searchMadrid(event);
-  }
-  if (city == "Paris") {
+  } else if (city == "paris") {
     searchParis(event);
-  }
-  if (city == "Dubai") {
+  } else if (city == "dubai") {
     searchDubai(event);
-  }
-  if (city == "Chicago") {
+  } else if (city == "chicago") {
     searchChicago(event);
   } else if (city == "") {
     alert("Please type a city!");
@@ -172,11 +169,8 @@ function submitEvent(event) {
     document.body.style.backgroundPosition = "center";
     document.body.style.backgroundRepeat = "repeat";
     document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundImage =
+    document.body.style.backgroundImage = document.body.style.backgroundImage =
       "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/447/original/alessio-soggetti-cfKC0UOZHJo-unsplash.jpg?1647480104')";
-    //document.getElementById("sourceCode").style.color = "white";
-    document.getElementById("textLink").style.color = "#3bd4df";
-    document.getElementById("textBox").style.backgroundColor = "#2D5D7B";
   }
 }
 
