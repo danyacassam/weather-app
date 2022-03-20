@@ -190,6 +190,7 @@ function getCurrentLocation(event) {
   document.body.style.backgroundSize = "cover";
   document.body.style.backgroundImage =
     "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/447/original/alessio-soggetti-cfKC0UOZHJo-unsplash.jpg?1647480104')";
+  document.querySelector("#searchCityInput").value = "";
 }
 
 // Cities Searches
