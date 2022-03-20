@@ -87,6 +87,7 @@ body {
 
 .searchInput {
   margin-left: 220px;
+  text-transform: capitalize;
 }
 
 .temperatureInput {
@@ -146,19 +147,20 @@ body {
 
 .textBox {
   text-align: center;
-  background-color: white;
-  max-width: 735px;
+  background-color: #3f7ea8;
+  max-width: 400px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 25px;
+  color: #3acdd8;
 }
 
 .textLink {
-  color: #3f7ea8;
+  color: white;
 }
 
 .textLink:hover {
-  color: #2fabb4;
+  color: white;
   cursor: pointer;
 }
 
@@ -183,10 +185,6 @@ body {
   text-align: center;
   color: #c2ccd4;
 }
-
-/* .dayNightInfo {
-  color: #2fabb4;
-} */
 
 .emojis {
   margin-right: 0 auto;
@@ -227,4 +225,8 @@ body {
 #paris:hover,
 #chicago:hover {
   font-weight: bold;
+}
+
+#searchCityInput {
+  text-transform: capitalize;
 }
