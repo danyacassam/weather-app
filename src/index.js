@@ -193,7 +193,6 @@ function getCurrentLocation(event) {
   document.querySelector("#searchCityInput").value = "";
 }
 
-// Cities Searches
 function searchLondon(event) {
   event.preventDefault();
   searchCity("London");
